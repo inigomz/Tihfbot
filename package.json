@@ -1,0 +1,25 @@
+{
+  "name": "tihfbot",
+  "version": "1.0.0",
+  "description": "This chatbot should pull chat requests through Twich api, then get sent to OpenAI's API assistant. After the response is generated through OpenAI, the response gets sent back through Twitch API and gets sent as a chat message.",
+  "main": "tihfbot",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tihf",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/inigomz/Tihfbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inigomz/Tihfbot/issues"
+  },
+  "homepage": "https://github.com/inigomz/Tihfbot#readme",
+  "devDependencies": {
+    "@types/ws": "^8.5.12"
+  }
+}
