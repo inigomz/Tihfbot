@@ -9,11 +9,13 @@ async def process_message_from_queue():
 
         # Interact with OpenAI's API
         response = OpenAI.Completion.create(
-            engine="text-davinci-003",
-            prompt=f"Respond to this Twitch message: {message}",
-            max_tokens=50
+            engine = "text-davinci-003",
+            prompt = f"Respond to this Twitch message: {message}",
+            max_tokens = 80
         )
+        # Declare a variable for the openAI response
         openai_response = response.choices[0].txt
 
+        # Send the openAI response to the openAI queue.
         await openai_response_queue.put(openai_response)
         print(f"OpenAI response: {openai_response}")
